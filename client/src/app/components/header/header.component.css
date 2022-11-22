@@ -1,0 +1,46 @@
+.wrapper {
+  display: flex;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid gray;
+  border-radius: 0.5rem;
+}
+
+.btn {
+  color: white;
+  display: inline-block;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+.logout {
+  background-color: red;
+  margin-right: 0.5rem;
+}
+.register {
+  background-color: blue;
+}
+
+.body {
+  flex: auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.body p {
+  font-size: 1rem;
+}

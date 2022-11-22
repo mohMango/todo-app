@@ -1,0 +1,16 @@
+<div class="wrapper">
+  <div class="add-item">
+    <input [formControl]="text" type="text" />
+    <button (click)="addItem()">Add</button>
+  </div>
+
+  <div *ngFor="let item of todos" class="item-wrapper">
+    <div class="item" (click)="updateStatus(item._id)">
+      <span class="select {{ item.done ? 'done' : '' }}"></span>
+      <h3 class="text {{ item.done ? 'done-text' : '' }}">{{ item.text }}</h3>
+    </div>
+    <div class="delete" (click)="deleteItem(item._id)">
+      <span>X</span>
+    </div>
+  </div>
+</div>

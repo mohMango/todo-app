@@ -1,0 +1,12 @@
+<div class="wrapper">
+  <button class="logout btn" (click)="logout()">
+    {{ this.authService.loggedIn() ? "logout" : "logoin" }}
+  </button>
+  <button *ngIf="!this.authService.loggedIn()" class="register btn" (click)="register()">
+    Register
+  </button>
+
+  <div class="body">
+    <p>{{ title }}</p>
+  </div>
+</div>

@@ -1,0 +1,115 @@
+.wrapper {
+  padding: 1rem;
+}
+
+.item-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-block: 0.5rem;
+}
+
+.item {
+  background: white;
+  height: 5rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  display: flex;
+  flex: auto;
+  align-items: center;
+  border: 1px solid gray;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: none;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: none;
+  border-right: none;
+}
+
+.item:hover {
+  background: #f4f4f4;
+}
+
+.item .text {
+  margin-left: 1rem;
+  flex: auto;
+}
+
+.item .select {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 1px solid gray;
+}
+
+.item .done {
+  background: green;
+  border: none;
+}
+
+.item .done-text {
+  text-decoration: line-through;
+}
+
+.add-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.add-item input {
+  width: 75%;
+  padding: 0.5rem;
+  border: 1px solid gray;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: none;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: none;
+}
+.add-item input:focus {
+  outline: none;
+  background: #f4f4f4;
+}
+
+.add-item button {
+  outline: none;
+  padding: 0.5rem;
+  padding-inline: 0.75rem;
+  border: 1px solid gray;
+  border-left: none;
+  border-top-left-radius: none;
+  border-top-right-radius: 0.5rem;
+  border-bottom-left-radius: none;
+  border-bottom-right-radius: 0.5rem;
+  background: white;
+}
+
+.add-item button:hover {
+  cursor: pointer;
+}
+
+.add-item button:active {
+  transform: scale(0.98);
+}
+
+.delete {
+  min-height: 5rem;
+  padding: 0.5rem 1rem;
+  color: red;
+  border: 1px solid gray;
+  border-left: none;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.delete:hover {
+  cursor: pointer;
+  border: 1px solid red;
+  background: red;
+  color: white;
+}

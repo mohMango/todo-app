@@ -1,0 +1,41 @@
+.wrapper {
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.form input {
+  padding: 0.5rem;
+  border: 1px solid gray;
+  border-radius: 0.5rem;
+  margin: 0.25rem;
+}
+.form input:focus {
+  outline: none;
+  background: #f4f4f4;
+}
+
+.form button {
+  background: white;
+  outline: none;
+  padding: 0.5rem;
+  padding-inline: 0.75rem;
+  border: 1px solid gray;
+  border-radius: 0.5rem;
+  margin: 0.25rem;
+}
+
+.form button:hover {
+  cursor: pointer;
+}
+
+.form button:active {
+  transform: scale(0.98);
+}
